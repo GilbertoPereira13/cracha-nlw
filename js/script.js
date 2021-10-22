@@ -14,14 +14,15 @@ const linksSocialMedia = {
   twitter: 'teste'
 }
 
-// -------------------------------- Do the same thing ---------------------------------
-// function changeSocialMediaLinks() {
-//   for (let li of socialLinks.children) {
-//     const social = li.getAttribute('class')
+function changeSocialMediaLinks() {
+  for (let li of socialLinks.children) {
+    const social = li.getAttribute('class')
 
-//     li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
-//   }
-// }
+    li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
+  }
+}
+changeSocialMediaLinks()
+// -------------------------------- Do the same thing ---------------------------------
 
 // function changeGithub() {
 //   for (let a of gitHubTeste.children) {
@@ -31,7 +32,6 @@ const linksSocialMedia = {
 //   }
 // }
 
-// changeSocialMediaLinks()
 // changeGithub()
 // -----------------------------------------------------------------------------------
 
